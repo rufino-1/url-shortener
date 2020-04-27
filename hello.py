@@ -1,8 +1,12 @@
-from flask import Flask
+from textblob import TextBlob
 
-app = Flask(__name__)
+print(TextBlob("this is amazing!!!").sentiment)
 
-@app.route('/')
-def home():
-    return 'Hello  Flask!'
+# from flask import Flask
+
+# app = Flask(__name__)
+
+# @app.route('/')
+# def home():
+#     return 'Hello  Flask!'
 
